@@ -1,0 +1,36 @@
+.container{
+    text-align: center;
+}
+.SmallMainContainer{
+   
+    text-align: center;
+    margin: 20px auto;
+    background-color: #55b2e7c1;
+    border-radius: 10px;
+    width: 700px;
+    padding: 10px;
+    
+}
+
+.title{
+   color: White;
+   font-weight: bolder;
+   
+}
+.SecondMain{
+    font-size: larger;
+    display: block;
+    font-weight: bold;
+    padding: 10px 30px ;
+    background-color: rgba(0, 255, 255, 0.458);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
+.INP{
+    width: 100vh;
+}
+.check{
+    width: 30px;
+    height: 30px;
+}

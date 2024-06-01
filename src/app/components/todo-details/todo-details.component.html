@@ -1,0 +1,44 @@
+@if(todo){
+
+
+<div class="container ">
+ <div class="SmallMainContainer">
+
+    <h2 class="title"> Todo Details</h2>
+    <h2> Todo Title : {{todo.title}}</h2>
+    <h2> Todo Completed : {{ todo.completed }}</h2>
+
+ </div>
+ <form (ngSubmit) ="updateToDo()" #Form1="ngForm">
+ <div class="SecondMain ">
+    <table>
+        <tr>
+    <th><label>Title :  </label></th>  
+        <td>
+ <input type="text" placeholder="Enter Value" value="" class="form-control INP"
+ [(ngModel)]="todo.title"
+ name="title1"
+ required
+ pattern="[A-Z-a-z]{3,}"
+ #input1="ngModel"
+ [ngClass]="{'is-invalid':(input1.touched || input1.dirty) && input1.invalid}"
+ >
+     </td><br></tr>
+      <tr>
+       <!-- <th>
+      <label>Completed :  </label>
+        <td>
+        <input type="checkbox" placeholder="Enter Value" 
+         class="check"
+         [(ngModel)]="todo.completed"
+         name="completed"
+         ></td>-->
+            <br></tr></table>
+   <button class="btn btn-primary w-full"
+  
+   >update</button>
+<!--<h2>{{input1.errors| json}}</h2>-->
+ </div>
+</form>
+</div>
+}

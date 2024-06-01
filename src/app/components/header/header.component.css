@@ -1,0 +1,28 @@
+.logo{
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 2px; 
+    z-index: 10;
+
+}
+.li{
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 12;
+
+}
+.ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.routerLinkActive{
+    color: green;
+}
